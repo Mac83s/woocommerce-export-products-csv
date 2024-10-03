@@ -1,0 +1,72 @@
+{
+	"name": "wpdesk/woocommerce-export-products-csv",
+	"authors": [
+		{
+			"name": "Krzysiek",
+			"email": "krzysiek@wpdesk.net"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"WPDesk\\WoocommerceExportProductsCSV\\": "src"
+		},
+		"classmap": [
+			"vendor_prefixed"
+		]
+	},
+	"autoload-dev": {
+	},
+	"config": {
+		"autoloader-suffix": "WoocommerceExportProductsCSV",
+		"sort-packages": true,
+		"platform": {
+			"php": "7.2"
+		},
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true,
+			"cweagans/composer-patches": true,
+			"wpdesk/wp-codeception": true,
+			"wpdesk/wp-wpdesk-composer": true,
+			"kylekatarnls/update-helper": true
+		}
+	},
+	"prefer-stable": true,
+	"minimum-stability": "stable",
+	"require": {
+		"php": ">=7.2",
+		"league/csv": "^9.5",
+		"psr/log": "^1.1.4",
+		"wpdesk/wp-wpdesk-helper-override": "^1.1.0"
+	},
+	"require-dev": {
+		"10up/wp_mock": "*",
+		"phpunit/phpunit": "<7",
+		"wp-coding-standards/wpcs": "^2.3",
+		"wpdesk/wp-builder": "^2.0.0",
+		"wpdesk/wp-codeception": "^2.7.4",
+		"wpdesk/wp-plugin-flow-free": "^1.0.2",
+		"wpdesk/wp-wpdesk-composer": "^2.20.0"
+	},
+	"extra": {
+		"text-domain": "woocommerce-export-products-csv",
+		"translations-folder": "lang",
+		"translation-file-headers": {
+			"Project-Id-Version": "Plugin Template",
+			"Last-Translator": "Grzegorz Rola <grola@wpdesk.pl>",
+			"X-Poedit-WPHeader": "woocommerce-export-products-csv.php"
+		},
+		"po-files": {
+			"pl_PL": "pl_PL.po"
+		},
+		"php-requires": "7.2"
+	},
+	"scripts": {
+		"test": "echo composer is alive",
+		"phpcs": "phpcs",
+		"phpcbf": "phpcbf src",
+		"phpunit-unit": "phpunit --configuration phpunit-unit.xml --coverage-text --colors=never",
+		"phpunit-unit-coverage": "phpunit --configuration phpunit-unit.xml --coverage-html build-coverage",
+		"phpunit-integration": "phpunit --configuration phpunit-integration.xml --coverage-text --colors=never",
+		"docs": "apigen generate"
+	}
+}
