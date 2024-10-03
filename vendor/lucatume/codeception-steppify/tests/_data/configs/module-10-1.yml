@@ -1,3 +1,0 @@
-namespace: Foo\\Bar
-modules:
-  tad\Tests\Modules\ModuleTen:

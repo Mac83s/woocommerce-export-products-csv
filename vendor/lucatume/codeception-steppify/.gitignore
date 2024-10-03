@@ -1,6 +1,0 @@
-/vendor/
-
-tests/_output/*codeception.yml
-tests/unit.suite.yml
-tests/functional.suite.yml
-.idea

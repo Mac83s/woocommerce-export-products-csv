@@ -1,6 +1,0 @@
-modules:
-  \tad\Tests\Modules\ModuleFour:
-    methods:
-      haveElementInDatabase:
-        generates: [given]
-        step: I have element :element in database

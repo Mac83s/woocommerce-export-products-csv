@@ -1,4 +1,0 @@
-modules:
-  tad\Tests\Modules\ModuleFive:
-    exclude:
-      - methodTwo

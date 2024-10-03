@@ -1,3 +1,0 @@
-namespace: Acme\\Project
-modules:
-  tad\Tests\Modules\ModuleNine:
